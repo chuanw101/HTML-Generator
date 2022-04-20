@@ -23,7 +23,7 @@ function writeToFile(fileName, data) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <header class="container-fluid text-center pt-3 pb-4 bg-dark text-light">
+    <header class="container-fluid text-center pt-3 pb-4 bg-dark text-primary">
         <h1>${data.name}</h1>
     </header>
     <section class="row mt-3">
@@ -34,8 +34,8 @@ function writeToFile(fileName, data) {
         <h2 class="col-3 text-primary text-end">Contact:</h1>
         <div class="col-7 d-flex justify-content-between mt-1">
             <a class="link-info" href= "mailto:${data.email}">Email</a>
-            <a class="link-info" href="${data.linkedin}">LinkedIn</a>
-            <a class="link-info" href="${data.github}">GitHub</a>
+            <a class="link-info" href="${data.linkedin}" target="_blank">LinkedIn</a>
+            <a class="link-info" href="${data.github}" target="_blank">GitHub</a>
         </div>
     </section>
 </body>
